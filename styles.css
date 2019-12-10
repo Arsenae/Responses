@@ -1,0 +1,152 @@
+/* Responses */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Avenir, sans-serif;
+	font-weight: bold;
+	margin: 0;
+	padding: 0.5em;
+	background: darkgrey;
+	color: black;
+	font-size: 18pt;
+	line-height: 1.2;
+}
+
+main {
+	max-width: 35em;
+	margin: 5em auto;
+	padding: 0 0.5em;
+	perspective: 20em;
+}
+
+h1, h2, h3, h4, h5 {
+	font-size: 2em;
+	margin: 0 0 1rem 0;
+	padding: 0;
+}
+
+h2 {
+	font-size: 1em;
+	color: white;
+}
+
+p {
+	margin: 0 0 1rem 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.borders {
+	border-radius: 0 10em 1em 0;
+	animation-name: borders;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	transform: rotateY(20deg);
+	transform-origin: left;
+	transition: transform 0.5s;
+}
+
+.borders:hover {
+	transform: rotateY(-10deg);
+}
+
+@keyframes borders {
+	from { border-radius: 0 10em 1em 0; }
+	to { border-radius: 0 1em 10em 0; }
+}
+
+.button {
+	border: 5px solid;
+	padding: 0.25em 0.5em;
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+	margin: 0.5em 0;
+	transition: color 0.25s;
+}
+
+.button:hover {
+	color: white;
+}
+
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: black;
+	padding: 0.5em;
+	z-index: 2;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav a {
+	margin: 0.5em;
+	color: lightgrey;
+	text-decoration: none;
+	transition: color 0.25s;
+}
+
+nav a:hover {
+	color: red;
+}
+
+.branding {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.meh {
+	border: solid 20px white;
+	width: fit-content;
+	padding: 2em;
+	color: white;
+	background: black;
+}
+
+.cool {
+	border: solid 20px black;
+	padding: 10em;
+	margin-left: 7em;
+	position: absolute;
+	padding-bottom: 2em;
+	background: white;
+	color: black;
+}
+
+.goblet {
+	color: white;
+	text-decoration: underline;
+	text-decoration-color: black;
+}
+
+.explain {
+	font-weight: lighter;
+	line-height: 25pt;
+}
+
+.interest {
+	padding-left: 2em;
+	font-size: 25pt
+	font-weight: bold;
+	color: white;
+	line-height: 1;
+	margin-left: 2em;
+	
+}
+
+
+
+
